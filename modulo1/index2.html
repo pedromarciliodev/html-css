@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+    </head>
+<body>
+<h1>Imagens Dinâmicas</h1>
+<p>Para melhor compreensão, tente abrir esse site em dispositivos diferentestes ou simplesmente aumente e diminua o navegador</p>
+
+
+
+<!-- Abre a tag picture, depois coloca a tag img com a foto MAIOR, depois acima coloca a tag 'sourcer' com imagem média e, posteriormente, e acima desta coloca a source com a imagem pequena-->
+
+<picture>
+
+    <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+    <img src="imagens/fotog.png" alt="imagem flexível">
+</picture>
+
+<h1>Reproduzindo áudios em HTML 5</h1>
+<audio preloud="metada" controls>  
+    <source src="midias/pop.mp3" type="audio/mpeg">
+    <source src="midias/pop.ogg" type="audio/ogg">
+    <source src="midias/pop.wav" type="audio/wav">
+    <p>Infelizmente, seu navegador não consegue reproduzir o áudio. Clique <a href="midias/pop.mp3">aqui</a> para baixar o arquivo.</p>
+    </audio>
+
+    <h1>Reproduzindo vídeos com HTML 5</h1>
+
+    <p>Reproduzindo vídeo hospedado localmente (modo simples)</p>
+    <video src="midias/meuvideo.mkv" width="500" height="300" controls loop autoplay></video>
+
+
+
+    <p>Inserindo vídeos hospedados localmente (em meu próprio servidor)</p>
+
+    <video width="500" height="300" poster="imagens/fotop.png" controls>   <!-- 'poster"é uma imagem criada para ficar como frame antes do início do vídeo-->
+        <source src="midias/meuvideo.mp4" type="video/mp4">
+        <source src="midias/Meuvideo.m4v" type="video/mp4">v
+        <source src="midias/meuvideo.webm" type="video/webm">
+        <source src="midias/meuvideo.ogv" type="video/ogg">
+<p>Seu navegador não consegue reproduzir o vídeo. Clique <a href="midias/meuvideo.mp4"></a> para baixá-lo.</p>
+
+    </video>
+
+
+    <p>Inserindo vídeos hospedados externamente</p>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(24, 90, 190);
+                    }
+
+                    header{
+                        background-color: white;
+                        padding: 10px;
+                        margin: 10px;
+                        border-radius: 10px;
+                    }
+
+                    nav{
+                        background-color: gray;
+                        padding: 3px;
+                        border-radius: 10px;
+                        box-shadow: 5px -7px 7px 1px black ;
+                          
+                    }
+
+                    nav > a{
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                        margin-left: 10px;
+                        margin-right: 30px;
+                                            }
+
+                                            nav > a:hover{
+                                                text-decoration: underline;
+                                                color: orange;
+
+                                            }
+
+                    main{
+                        background-color: white;
+                        padding: 10px;
+                        margin: 10px;
+                        border-radius: 15px;
+                    }
+
+                    article{
+                        background-color: brown;
+                        border-radius: 10px;
+                                            }
+
+                    article > aside
+                    {background-color: blueviolet;
+                        border-radius: 10px;
+                        
+
+                    }
+
+                    article > aside > p
+                    {margin-left: 10px;
+                        
+
+                    }
+
+                    article > h2 {
+                        text-decoration: underline;
+                        margin-left: 10px;
+                       
+                    }
+
+                    article > p {
+                           margin-left: 10px;
+                           
+                    
+                    }
+                        
+
+
+                    footer{
+                        background-color: black;
+                        padding: 4px;
+                        margin-left: 10px;
+                        color: white;
+                        text-align: center;
+                        border-radius: 10px;
+                    }
+
+                footer > p{margin: 0px;}
+
+                div#bola {
+                    height:100px;
+                    width: 100px;
+                    margin: 10px;
+                    border-radius: 50%;
+                     background-color: white; 
+                                   }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+            <a href="#">link 5</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+
+        </section>
+
+        <section id="notícias">
+<article>
+    <h2>Notícias sobre o Brasil</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe consectetur sunt est nam quo ullam nostrum aspernatur architecto deserunt qui consequatur reprehenderit asperiores, perferendis odio maxime dolore illo fugiat tempore.</p>
+    <aside>
+        <p>Artigo escrito por Guanabara</p>
+    </aside>
+
+</article>
+<article></article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Curso em vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
