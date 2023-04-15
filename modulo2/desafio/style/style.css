@@ -96,7 +96,8 @@
         background-color: var(--cor5);
         color: var(--cor1);
         text-decoration: underline;
-        
+        max-width: 800px;
+        min-width: 300px;
 
 
     }
@@ -119,8 +120,9 @@
         color: var(--cor4);
         margin: 20px 0px;
         font-family:var(--fonte-android) ;
-        
-
+        font-size: 1.4em;
+        max-width: 800px;
+        min-width: 300px;
     }
     
     main h2 {
