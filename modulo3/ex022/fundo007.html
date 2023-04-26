@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+
+<style>
+#container {
+position: relative;
+height: 94vh;
+padding: 10px;
+background-color: blueviolet;
+background-image: url(imagens/target001.png);
+background-size: 100% 100%;
+
+
+}
+
+#conteudo {
+   position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+    background-image: url(imagens/target001.png);
+    background-size: 100% 100%;
+
+    /* coloca-se a caixa maior em posição relativa e a caixa menor em posição absoluta; em seguida, usa o 'left' e o 'top' para centralizar a ponta da caixa menor no centro da maior e, por último, o transforme para centralizar o centro da menor junto ao centro da maior */
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+       
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+
+</body>
+</html>
