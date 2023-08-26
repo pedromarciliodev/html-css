@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários com Checkbox e radio button</title>
+    <style>
+        fieldset{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo </h1>
+    
+<form action="cadastro.php" method="get" autocomplete="on">
+
+<fieldset>
+    <legend>Sexo:</legend>
+    <input type="radio" name="sexo" id="isxmasc"><label for="isexmasc">Masculino</label>
+    <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+</fieldset>
+
+    <fieldset>
+    <legend>Esportes Favoritos</legend>
+    <input type="checkbox" name="fut" id="ifut" checked> <label for="ifut">Futebol </label><br>
+    <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete </label><br>
+    <input type="checkbox" name="hand" id="ihand"><label for="ihand">Handball </label><br>
+    <input type="checkbox" name="volei" id="ivolei"><label for="ivolei">voleiball </label><br>
+    <input type="checkbox" name="nat" id="inat"><label for="inat">Natação </label><br>
+    </fieldset>
+
+    <p>
+    <input type="submit" value="ENVIAR">
+    <input type="reset" value="LIMPAR">
+    </p>
+</form>
+    
+    
+</body>
+</html>
